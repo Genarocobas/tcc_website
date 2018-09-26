@@ -24,7 +24,7 @@ export class AppComponent {
     });
     
     let options = { headers: headers };
-    this.http.post("http://localhost:3000/api/employees", User, options).subscribe(
+    this.http.post("https://tcc-nfc.herokuapp.com/api/employees", User, options).subscribe(
       (response) => console.log("Topzera: " + response),
       (error) => console.log(error)
     )
